@@ -1,7 +1,7 @@
 {
   "name": "react-native-line-login-android",
   "version": "0.1.0",
-  "description": "test",
+  "description": "React native line login",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -39,7 +39,11 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "line",
+    "line-login",
+    "line-android",
+    "line-login-android"
   ],
   "repository": {
     "type": "git",
