@@ -7,25 +7,37 @@ Let your users sigin with their LINE account.
 ```sh
 npm install react-native-line-login-android
 ```
+### Manual installation
 
+1. Add jcenter() to android/build.gradle (if not already)
+  ```sh
+    allprojects {
+      ...
+        repositories{
+          jcenter()
+          ...
+        }
+      ...
+    }
+  ```
+2. Change android:allowBackup to "true" in android/app/src/main/AndroidManifest.xml
 ## Usage
 
 ```js
-import { multiply } from 'react-native-line-login-android';
+import { Login } from 'react-native-line-login-android';
 
 // ...
 
-const result = await multiply(3, 7);
+try {
+  Login('#channelId')
+    .then((result)=> {
+      console.log(result);//string
+      console.log(JSON.parse(result));//object
+    })
+}catch (err){
+  console.log(err);
+}
 ```
 
-## Contributing
+# Thank you!
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
