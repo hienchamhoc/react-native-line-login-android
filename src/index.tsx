@@ -17,6 +17,7 @@ const LineLoginAndroid = NativeModules.LineLoginAndroid
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return LineLoginAndroid.multiply(a, b);
+
+export function Login(channelId:string): Promise<string> {
+  return LineLoginAndroid.Login(channelId);
 }

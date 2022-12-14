@@ -5,7 +5,7 @@ buildscript {
   }
 
   dependencies {
-    classpath "com.android.tools.build:gradle:7.2.1"
+    classpath 'com.android.tools.build:gradle:7.2.1'
   }
 }
 
@@ -53,6 +53,7 @@ android {
 }
 
 repositories {
+  jcenter()
   mavenCentral()
   google()
 }
@@ -62,7 +63,9 @@ dependencies {
   // For < 0.71, this will be from the local maven repo
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
-  implementation "com.facebook.react:react-native"
+  implementation "com.facebook.react:react-native:+"
+  implementation 'com.linecorp:linesdk:latest.release'
+  implementation group: 'com.google.code.gson', name: 'gson', version: '2.9.0'
 }
 
 if (isNewArchitectureEnabled()) {
