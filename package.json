@@ -1,6 +1,6 @@
 {
   "name": "react-native-line-login-android",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "React native line login",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
