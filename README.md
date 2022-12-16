@@ -8,8 +8,9 @@ Let your users sigin with their LINE account.
 npm install react-native-line-login-android
 ```
 ### Manual installation
+1. Create a channel following instructions at [Line Developers](https://developers.line.biz/en/docs/android-sdk/integrate-line-login/#link-app-to-channel)
 
-1. Add jcenter() to android/build.gradle (if not already)
+2. Add jcenter() to android/build.gradle (if not already)
   ```sh
     allprojects {
       ...
@@ -20,7 +21,7 @@ npm install react-native-line-login-android
       ...
     }
   ```
-2. Change android:allowBackup to "true" in android/app/src/main/AndroidManifest.xml
+3. Change android:allowBackup to "true" in android/app/src/main/AndroidManifest.xml
 ## Usage
 
 ```js
