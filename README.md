@@ -7,6 +7,10 @@ Let your users sigin with their LINE account.
 ```sh
 npm install react-native-line-login-android
 ```
+#### or
+```sh
+yarn add react-native-line-login-android
+```
 ### Manual installation
 1. Create a channel following instructions at [Line Developers](https://developers.line.biz/en/docs/android-sdk/integrate-line-login/#link-app-to-channel)
 
